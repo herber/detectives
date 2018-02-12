@@ -1,0 +1,43 @@
+{
+  "name": "detectives",
+  "version": "1.0.0",
+  "description": "Find require statements in a string using regex",
+  "license": "MIT",
+  "repository": "herber/detectives",
+  "author": {
+    "name": "Tobias Herber",
+    "email": "tobihrbr@gmail.com",
+    "url": "tobihrbr.com"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "test": "formatted && nyc ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "detective",
+    "require",
+    "find",
+    "resolve",
+    "analyze"
+  ],
+  "dependencies": {
+    "require-regex": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "codecov": "^2.2.0",
+    "formatted": "^1.0.0",
+    "nyc": "^11.0.0"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}
