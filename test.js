@@ -31,4 +31,6 @@ test('finds requires', t => {
   t.is(found[2].module, 'assemble-template');
   t.is(found[2].variable, undefined);
   t.is(found[2].input, `require('assemble-template');`);
+
+  t.is(m(`test`).length, 0);
 });
